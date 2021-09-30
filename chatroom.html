@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="chatroom.css">
+</head>
+<body>
+    <div id="container">
+        <div id="chat-room"></div>
+
+            <div id="chat-holder">
+                <h2 id="name">0</h2>
+                <input type="text" id="message" placeholder="Chat" />
+                <button id="send-btn" onclick="sendBtn()">Send</button>
+                <button id='return-btn' onclick="returnBtn()"><i class="fas fa-home"></i></button>
+                
+            </div>
+<!-- 
+            <form id="chat-holder">
+                <h2 id="name">0</h2>
+                <input type="text" id="message" placeholder="Chat" required/>
+                <button id="send-btn" onclick="sendBtn()">Send</button>
+            </form> -->
+
+        
+    </div>
+    <!-- firebase app -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+    <!-- firebase database -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-database.js""></script>
+
+    <script src="chatroom.js"></script>
+</body>
+</html>

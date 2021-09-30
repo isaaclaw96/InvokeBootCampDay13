@@ -1,0 +1,28 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+#container {
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.price-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.price-list > * {
+    margin: 0 5px;
+}
+
+#grandTotal {
+    background-color: black;
+    color: white;
+}

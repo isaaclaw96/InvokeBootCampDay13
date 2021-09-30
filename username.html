@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="numText">0</h1>
+    <script>
+        grandTotalSaved = sessionStorage.getItem('grandTotalSaved') //to pull back out what was stored in the cache
+        console.log("saved page2:", grandTotalSaved);
+
+        let totalNum = document.getElementById('numText');
+
+        totalNum.innerHTML = grandTotalSaved;
+    </script>
+</body>
+
+</html>
